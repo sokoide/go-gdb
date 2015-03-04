@@ -3,18 +3,17 @@ Fixed runtime-gdb.py script for goroutine debugging.
 Originally written at http://blog.securitymouse.com/2014/10/golang-debugging-turning-pennies-into-gs.html.
 
 ## Note
-Check branch and use the same version of the script as your target go version.
+Checkout appropriate branch and use the same version of the script as your target go version.
 It may not work in 32bit process or other OS than OSX/Windows.
 
 ## How to use
-1 run your debuggee written in go under gdb, or run gdb and attach to it
-1 source path-to-runtime-gdb.py
-1 info goroutine
-1 goroutine $goroutine-id bt
+1. run your debuggee written in go under gdb, or run gdb and attach to it
+2. source path-to-runtime-gdb.py
+3. info goroutine
+4. goroutine $goroutine-id bt
 
 ## Samples
-```
-(gdb) info go
+``` (gdb) info go
   1 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc208000120 waitreason="sleep"
   2 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc208000480 waitreason="force gc (idle)"
   3 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc2080005a0 waitreason="GC sweep wait"
