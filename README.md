@@ -13,7 +13,8 @@ It may not work in 32bit process or other OS than OSX/Windows.
 4. goroutine $goroutine-id bt
 
 ## Samples
-``` (gdb) info go
+```
+(gdb) info go
   1 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc208000120 waitreason="sleep"
   2 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc208000480 waitreason="force gc (idle)"
   3 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc2080005a0 waitreason="GC sweep wait"
