@@ -1,6 +1,6 @@
 # go-gdb
-Fixed runtime-gdb.py
-<<<<<<< HEAD
+Fixed runtime-gdb.py script for goroutine debugging.
+Originally written at http://blog.securitymouse.com/2014/10/golang-debugging-turning-pennies-into-gs.html.
 
 ## Note
 Check branch and use the same version of the script as your target go version.
@@ -28,5 +28,8 @@ It may not work in 32bit process or other OS than OSX/Windows.
 #3  0x00000000000020f8 in main.f2 (a=40, b=2, ~r2=1) at /Users/sokoide/workspace/go/foo/foo.go:24
 #4  0x0000000000002551 in main.main () at /Users/sokoide/workspace/go/foo/main.go:22
 ```
-=======
->>>>>>> 23c101f84ad52824a0332f5ddca39273436321f6
+
+## More Info
+http://www.sokoide.com/wp/2015/03/02/debugging-go-program-with-gdb-1/
+http://www.sokoide.com/wp/2015/03/03/debugging-go-program-with-gdb-2/
+
