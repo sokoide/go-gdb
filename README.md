@@ -1,18 +1,24 @@
 # go-gdb
+
+This is *only for go1.4.x*. Please use the official (included) runtime-gdb.py in the go package which doesn't have the problem.
+
 Fixed runtime-gdb.py script for goroutine debugging.
 Originally written at http://blog.securitymouse.com/2014/10/golang-debugging-turning-pennies-into-gs.html.
 
 ## Note
+
 Checkout appropriate branch and use the same version of the script as your target go version.
 It may not work in 32bit process or other OS than OSX/Windows.
 
 ## How to use
+
 1. run your debuggee written in go under gdb, or run gdb and attach to it
 2. source path-to-runtime-gdb.py
 3. info goroutine
 4. goroutine $goroutine-id bt
 
 ## Samples
+
 ```
 (gdb) info go
   1 waiting  fname=runtime.gopark faddr=0x13415 &g=0xc208000120 waitreason="sleep"
